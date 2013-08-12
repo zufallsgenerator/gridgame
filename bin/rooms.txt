@@ -1,0 +1,6 @@
+castle.room
+corridor.room
+start.room
+house1.room
+eastofcastle.room
+eastsea.room

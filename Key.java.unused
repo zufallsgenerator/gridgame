@@ -1,0 +1,39 @@
+package tilegame;
+
+/**
+ * Collectable
+ * 
+ * @author Christer Byström
+ */
+public class Key extends Actor {
+
+	private static final String KEY1_GIF = "key1.gif";
+	private static final String GFX_KEYS = "gfx/keys/";
+
+	/**
+	 * @param room
+	 */
+	public Key(Room room) {
+		super(room);
+		loadStill(GFX_KEYS, KEY1_GIF);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see tilegame.Actor#doIntelligence()
+	 */
+	public void doIntelligence() {
+		whoThere();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see tilegame.Actor#isCollectable()
+	 */
+	public Boolean isCollectable() {
+		return true;
+	}
+
+}
